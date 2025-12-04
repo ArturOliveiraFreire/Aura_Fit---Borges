@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- Configuração base -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Fit</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/LogoRoxo.svg" type="image/x-icon">
+
+    <!-- Link CSS e JS -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+    <main>
+
+        <div id="fundo_Roxo">
+
+            <div id="sombras"></div>
+
+            <header class="espacamento">
+
+                <img src="img/LogoBrancoHorizontal.svg" alt="Logo SENSASIONAL da empresa Aura Fit™">
+
+                <nav id="menu" class="menu">
+                    <a href="#sobre">Sobre</a>
+                    <a href="#Novidades">Novidades</a>
+                    <a href="#loja">Loja</a>
+                    <a href="#formulario">Formulário</a>
+                </nav>
+
+                <button id="menu_botao" onclick="abreFechaMenu()">
+
+                    <!-- Menu de Hamburguer -->
+
+                    <svg id="icone_barras" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path
+                            d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z" />
+                    </svg>
+
+
+                    <!-- X do Menu de Hamburguer  -->
+
+                    <svg id="icone_x" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 640 640"><!--!Font Awesome Pro v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2025 Fonticons, Inc.-->
+                        <path
+                            d="M504.6 148.5C515.9 134.9 514.1 114.7 500.5 103.4C486.9 92.1 466.7 93.9 455.4 107.5L320 270L184.6 107.5C173.3 93.9 153.1 92.1 139.5 103.4C125.9 114.7 124.1 134.9 135.4 148.5L278.3 320L135.4 491.5C124.1 505.1 125.9 525.3 139.5 536.6C153.1 547.9 173.3 546.1 184.6 532.5L320 370L455.4 532.5C466.7 546.1 486.9 547.9 500.5 536.6C514.1 525.3 515.9 505.1 504.6 491.5L361.7 320L504.6 148.5z" />
+                    </svg>
+
+                </button>
+
+            </header>
+
+        </div>
+
+        <div id="banner">
+
+            <!-- <img src="img/banner.png" alt="Banner da pagina estrelando Saab como modelo"> -->
+
+            <div id="banner-texto">
+                <p>SEU CORPO FALA</p>
+                <div id="texto-2">
+                    <p>A AURA ESCUTA</p>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+        <section id="sobre">
+
+            <img id="sobre-img" src="img/sobre_mockup.png" alt="placa com a logo ">
+
+            <div id="quadrado-preto">
+
+                <h1>CONHEÇA NOSSA HISTÓRIA</h1>
+
+                <p>A ideia nasceu da visão de dois amigos que transformaram sua paixão por atividade física em um
+                    negócio. Ex-atletas, eles decidiram criar um espaço que unisse academia de performance com uma loja
+                    de produtos fitness de alta qualidade.</p>
+            </div>
+
+        </section>
+
+
+        <section id="carrossel">
+            <img src="img/carrosel1.png" alt="">
+        </section>
+
+
+        <section id="loja" class="espacamento">
+
+            <h1 class="titulo">AURA SHOP</h1>
+
+            <div id="cards">
+
+                <div class="card">
+
+                    <h2>Produtos</h2>
+
+                    <img src="img/ProdutoGarrafa.png" alt="">
+
+                </div>
+
+
+                <div class="card">
+
+                    <h2>Roupa</h2>
+
+                    <img src="img/ProdutoCamisa.png" alt="">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="contato" class="espacamento">
+
+            <h1 class="titulo">ENTRE EM CONTATO</h1>
+
+            <form action="">
+
+                <div class="campo">
+                    <label for="campo-nome">Qual é o seu nome?</label>
+                    <input type="text" id="campo-nome" placeholder="Digite seu nome...">
+                </div>
+
+                <div class="campo">
+                    <label for="campo-email">Qual e-mail poderiamos te responder?</label>
+                    <input type="text" id="campo-email" placeholder="Digite seu e-mail...">
+                </div>
+
+                <div class="campo">
+                    <label for="campo-texto">Como podemos te ajudar? </label>
+                    <textarea id="campo-texto" placeholder="Digite oque está pensando..." cols="30"
+                        rows="10"></textarea>
+                </div>
+
+                <button type="submit">ENVIAR</button>
+
+            </form>
+
+        </section>
+
+        <footer>
+            <div class="espacamento">
+
+                <img src="img/LogoBrancoHorizontal.svg" alt="">
+
+            </div>
+        </footer>
+
+
+    </main>
+
+</body>
+
+</html>

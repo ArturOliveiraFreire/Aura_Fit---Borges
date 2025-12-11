@@ -31,9 +31,9 @@
 
                 <nav id="menu" class="menu">
                     <a href="#sobre">Sobre</a>
-                    <a href="#Novidades">Novidades</a>
+                    <a href="#carrossel">Novidades</a>
                     <a href="#loja">Loja</a>
-                    <a href="#formulario">Formulário</a>
+                    <a href="#contato">Formulário</a>
                 </nav>
 
                 <button id="menu_botao" onclick="abreFechaMenu()">
@@ -62,8 +62,6 @@
         </div>
 
         <div id="banner">
-
-            <!-- <img src="img/banner.png" alt="Banner da pagina estrelando Saab como modelo"> -->
 
             <div id="banner-texto">
                 <p class="maiusculo">seu corpo fala</p>
@@ -97,9 +95,7 @@
         </section>
 
 
-        <section id="carrossel">
-            <!-- <img src="img/carrosel1.png" alt=""> -->
-
+        <section id="carrossel" class="espacamento">
 
 
             <!-- ---------------------- CARRROSEL!!!!! ---------------------- -->
@@ -115,7 +111,6 @@
                 <div class="mySlides fade">
                     <img src="img/carrosel2.png" style="width:100%">
                 </div>
-
 
 
                 <!-- Next and previous buttons -->
@@ -143,45 +138,42 @@
 
             <h1 class="titulo maiusculo">aura shop</h1>
 
-            <!-- <div id="cards">
+
+            <div id="fileira1">
 
                 <div class="card">
-
-                    <h2>Produtos</h2>
-
-                    <img src="img/ProdutoGarrafa.png" alt="">
-
+                    <img src="img/ProdutoGarrafa.png" alt="Denim Jeans" style="width:100%">
+                    <h1 class="maiusculo" >Garrafa Aura Fit</h1>
+                    <p class="price">R$19.99</p>
+                    <p><button>Adicionar ao carrinho</button></p>
                 </div>
-
 
                 <div class="card">
-
-                    <h2>Roupa</h2>
-
-                    <img src="img/ProdutoCamisa.png" alt="">
-
+                    <img src="img/ProdutoCamisa.png" alt="Denim Jeans" style="width:100%">
+                    <h1 class="maiusculo" >Blusa Aura Fit</h1>
+                    <p class="price">R$19.99</p>
+                    <p><button>Adicionar ao carrinho</button></p>
                 </div>
 
-            </div> -->
-
-            <!-- ---------------------- CARDS ---------------------- -->
-
-            <div id="image-slider" class="splide">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide">
-                            <img src="img/ProdutoGarrafa.png">
-                        </li>
-                        <li class="splide__slide">
-                            <img src="img/ProdutoPote.png">
-                        </li>
-                    </ul>
-                </div>
             </div>
 
-            <!-- ---------------------- FIM ---------------------- -->
+            <div id="fileira2">
 
+                <div class="card">
+                    <img src="img/ProdutoPote.png" alt="Denim Jeans" style="width:100%">
+                    <h1 class="maiusculo" >Whey sabor aura</h1>
+                    <p class="price">R$99.99</p>
+                    <p><button>Adicionar ao carrinho</button></p>
+                </div>
 
+                <div class="card">
+                    <img src="img/ProdutoCalca.png" alt="Denim Jeans" style="width:100%">
+                    <h1 class="maiusculo" >Calça Aura Fit</h1>
+                    <p class="price">R$29.99</p>
+                    <p><button>Adicionar ao carrinho</button></p>
+                </div>
+
+            </div>
 
 
         </section>
@@ -214,7 +206,7 @@
 
         </section>
 
-        <footer>
+         <footer>
             <div class="espacamento">
 
                 <img src="img/LogoBrancoHorizontal.svg" alt="">
@@ -252,9 +244,6 @@
 
                 </div>
 
-
-
-
             </div>
 
             <p id="direitos-reservados">© 2025 Aura Fit™. Todos os direitos reservados™</p>
@@ -266,9 +255,5 @@
     </main>
 
 </body>
-
-<script>
-    new Splide('#image-slider').mount();
-</script>
 
 </html>

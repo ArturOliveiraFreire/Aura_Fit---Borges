@@ -14,6 +14,7 @@ body {
     --Roxo_Aura: #8800FF;
     --Rosil: #DC5DFF;
     --cinza: #E8E8E8;
+    --Roxo_Aura_escuro: #7100D4;
 }
 
 .espacamento {
@@ -107,6 +108,12 @@ header img {
     padding-top: 100px;
 }
 
+
+#banner-texto p:hover {
+    color: var(--Rosil);
+}
+
+
 #banner-texto p {
     padding-left: 160px;
 }
@@ -146,8 +153,13 @@ header img {
     border-left: 8px solid var(--Roxo_Aura);
 
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     top: 70px;
+}
+
+#sobre #quadrado-preto:hover {
+   transform: scale(1.04);
+   transition: .5s ease-in-out;
 }
 
 #sobre h1 {
@@ -178,8 +190,6 @@ header img {
 
 
 #carrossel {
-    /* display: flex;
-    justify-content: center; */
     padding-bottom: 290px;
 }
 
@@ -248,10 +258,10 @@ header img {
 /* The dots/bullets/indicators */
 .dot {
     cursor: pointer;
-    height: 15px;
-    width: 15px;
+    height: 25px;
+    width: 25px;
     margin: 0 2px;
-    background-color: #bbb;
+    background-color: var(--preto);
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -259,7 +269,7 @@ header img {
 
 .active,
 .dot:hover {
-    background-color: #717171;
+    background-color: var(--Roxo_Aura);
 }
 
 /* Fading animation */
@@ -286,51 +296,71 @@ header img {
 /* ------------ LOJA ------------ */
 
 #loja {
-    padding-bottom: 350px;
+    padding-bottom: 260px;
 }
 
 #loja h1 {
     padding-bottom: 100px;
 }
 
-#cards {
-    display: flex;
-    justify-content: space-between;
-}
 
 .card {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+    max-width: 250px;
+    margin: auto;
+    text-align: center;
+    font-family: "lato_bold_italic";
+
+    border-radius: 20px;
+
+}
+
+.card h1 {
+    position: relative;
+    top: 20px;
+
+    font-size: 25px;
 }
 
 .card img {
-    height: 350px;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
-.card h2 {
-    color: var(--preto);
-    font-size: 40px;
-    text-decoration: none;
-    font-family: "lato_bold_italic";
-}
+.price {
+    color: grey;
+    font-size: 26px;
 
-
-
-
-.splide__slide img {
-    height: 350px;
-    width: auto;
+    position: relative;
+    bottom: 20px;
 }
 
 
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
 
+.card button:hover {
+    opacity: 0.7;
+}
 
+#fileira1,
+#fileira2 {
+    display: flex;
+    padding-bottom: 90px;
+}
 
-
-
-
+.card:hover {
+    transform: scale(1.05);
+    transition: .5s ease-in-out;
+}
 /* ------------  FORMULARIO ------------ */
 
 #contato {
@@ -406,6 +436,11 @@ header img {
     font-size: 40px;
 }
 
+#contato form button:hover {
+    background-color: var(--Roxo_Aura_escuro);
+    transition: .3s ease;
+}
+
 /* ------------  FOOTER ------------ */
 
 footer {
@@ -477,14 +512,12 @@ footer svg {
 
 }
 
-
-
 @media screen and (max-width: 768px) {
 
     #sombras {
         background-color: var(--Rosil);
         backdrop-filter: blur(10px);
-        z-index: 1;
+        z-index: 2;
         position: fixed;
         width: 100vw;
         height: 100vh;
@@ -494,7 +527,7 @@ footer svg {
 
     #menu_botao {
         display: block;
-        z-index: 1;
+        z-index: 2;
     }
 
     header {
@@ -503,7 +536,6 @@ footer svg {
 
     header button {
         width: 50px;
-        /* background-color: none; */
         background: none;
         border: none;
 
@@ -530,7 +562,7 @@ footer svg {
         position: fixed;
         top: 165px;
         right: -210px;
-        z-index: 1;
+        z-index: 2;
         transition: .5s;
     }
 
@@ -546,7 +578,116 @@ footer svg {
 
 
     #banner-texto {
-        font-size: 25px;
+        font-size: 28px;
         padding-top: 50px;
     }
+
+    #banner {
+        height: 600px;
+
+    }
+
+    /* ------------ SOBRE ------------ */
+
+    #sobre {
+        padding-bottom: 400px;
+    }
+
+    #sobre-img {
+        width: 540px;
+    }
+
+    #sobre #quadrado-preto {
+        height: 300px;
+        width: 340px;
+
+    }
+
+    #sobre #quadrado-preto P {
+        font-size: 17px;
+        padding-right: 20px;
+
+        padding-left: 25px;
+    }
+
+    #sobre #quadrado-preto h1 {
+        font-size: 20px;
+        padding-bottom: 20px;
+
+        padding-left: 35px;
+    }
+
+    #direita {
+        position: relative;
+        bottom: 180px;
+    }
+
+
+    /* ------------  FORMULARIO ------------ */
+
+
+    .campo textarea {
+        height: 100px;
+
+        font-size: 25px;
+    }
+
+    .campo input {
+        height: 50px;
+        font-size: 25px;
+    }
+
+    .campo {
+        width: 625px;
+    }
+
+    .campo label {
+
+        font-size: 25px;
+
+    }
+
+    #contato form button {
+        background-color: var(--Roxo_Aura);
+        height: 55px;
+        width: 300px;
+        border: none;
+        border-radius: 15px;
+        color: var(--branco);
+        font-size: 35px;
+    }
+
+
+    /* ------------  CARROSSEL ------------ */
+
+    .prev,
+    .next {
+        font-size: 45px;
+    }
+
+
+    /* ------------  FOOTER ------------ */
+
+    footer svg {
+        height: 45px;
+    }
+
+    footer img {
+        height: 90px;
+    }
+
+    footer p{
+        font-size: 28px;
+    }
+
+    footer div.espacamento {
+        display: flex;
+        gap: 50px;
+    }
+
+    footer svg:hover {
+        cursor: pointer;
+        color: var(--Roxo_Aura);
+    }
+
 }
